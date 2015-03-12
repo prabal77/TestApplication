@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.prabal.wallet.ui.controller.HomepageController">
+	<children>
+		<Group AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<AnchorPane layoutY="70.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="115.0" prefWidth="475.0">
+					<children>
+						<Text fontSmoothingType="LCD" layoutX="3.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Home Maintenance Wallet Application !!!!" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<font>
+								<Font name="System Bold Italic" size="18.0" />
+							</font>
+							<fill>
+								<LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+									<stops>
+										<Stop color="#c61c1c" />
+										<Stop color="#c41d1d" offset="0.3005490381956784" />
+										<Stop color="#c41d1d" offset="1.0" />
+									</stops>
+								</LinearGradient>
+							</fill>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.009523809523809525">
+                           <stops>
+                              <Stop color="#eb1b1b" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+						</Text>
+                  <ProgressIndicator layoutX="217.0" layoutY="58.0" progress="0.0" />
+					</children>
+				</AnchorPane>
+			</children>
+		</Group>
+	</children>
+</AnchorPane>
