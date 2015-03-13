@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="248.0" prefWidth="782.0" styleClass="profileTitle"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="com.wellsfargo.tme.ui.controller.LoginController">
+	<children>
+		<GridPane alignment="CENTER" hgap="5.0" layoutX="127.0"
+			layoutY="6.0" prefHeight="194.0" prefWidth="484.0"
+			style="-fx-background-color: linear-gradient(derive(-fx-color, -90%),derive(-fx-color, -60%)), linear-gradient(derive(-fx-color, -60%),derive(-fx-color, -35%) 50%, derive(-fx-color, -30%) 98%,derive(-fx-color, -50%)), linear-gradient(to left, rgba(245,246,246,1),rgba(219,220,226,1) 10%, rgba(184,186,198,1) 90%, rgba(221,223,227,1));"
+			vgap="2.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="127.0"
+			AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="6.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+					prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+					prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="59.0" minHeight="10.0"
+					prefHeight="45.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="31.0" minHeight="10.0"
+					prefHeight="29.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label text="USER NAME" GridPane.halignment="RIGHT"
+					GridPane.rowIndex="1">
+					<font>
+						<Font name="System Bold Italic" size="14.0" />
+					</font>
+					<textFill>
+						<LinearGradient endX="1.0" endY="1.0">
+							<stops>
+								<Stop color="#f20909" />
+								<Stop color="#fcf805" offset="0.7892720306513408" />
+								<Stop color="#fcf805" offset="1.0" />
+							</stops>
+						</LinearGradient>
+					</textFill>
+				</Label>
+				<Label text="PASSWORD" GridPane.halignment="RIGHT"
+					GridPane.rowIndex="2">
+					<font>
+						<Font name="System Bold Italic" size="14.0" />
+					</font>
+					<textFill>
+						<LinearGradient endX="1.0" endY="1.0">
+							<stops>
+								<Stop color="#f20909" />
+								<Stop color="#fcf805" offset="0.7892720306513408" />
+								<Stop color="#fcf805" offset="1.0" />
+							</stops>
+						</LinearGradient>
+					</textFill>
+				</Label>
+				<TextField fx:id="userNameTxt" promptText="User Name"
+					GridPane.columnIndex="1" GridPane.rowIndex="1">
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</TextField>
+				<PasswordField fx:id="passwordTxt" promptText="Password"
+					GridPane.columnIndex="1" GridPane.rowIndex="2">
+					<GridPane.margin>
+						<Insets left="10.0" right="10.0" />
+					</GridPane.margin>
+				</PasswordField>
+				<HBox alignment="BOTTOM_RIGHT" GridPane.columnIndex="1"
+					GridPane.rowIndex="3">
+					<children>
+						<Button id="button" fx:id="loginBtn" alignment="CENTER"
+							contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="1.7976931348623157E308"
+							maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+							onAction="#handleLogin" prefHeight="40.0" prefWidth="187.0" text="Login"
+							textFill="#699a60" GridPane.columnIndex="1" GridPane.rowIndex="2">
+							<font>
+								<Font name="Arial Bold Italic" size="14.0" />
+							</font>
+							<HBox.margin>
+								<Insets right="10.0" />
+							</HBox.margin>
+						</Button>
+					</children>
+				</HBox>
+				<Label fx:id="errorMessageLbl" alignment="CENTER"
+					contentDisplay="CENTER" maxHeight="1.7976931348623157E308"
+					maxWidth="1.7976931348623157E308" wrapText="true"
+					GridPane.columnSpan="2">
+					<GridPane.margin>
+						<Insets left="5.0" right="5.0" />
+					</GridPane.margin>
+					<padding>
+						<Insets left="5.0" right="5.0" />
+					</padding>
+				</Label>
+			</children>
+			<padding>
+				<Insets bottom="20.0" top="20.0" />
+			</padding>
+		</GridPane>
+	</children>
+</AnchorPane>
